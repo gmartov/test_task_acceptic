@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Vodafone Support Test Suite" verbose="1" configfailurepolicy="continue" parallel="classes" thread-count="2"
+       preserve-order="true">
+    <!--group-by-instances="true">-->
+    <listeners>
+        <listener class-name="org.testng.reporters.FailedReporter"/>
+        <listener class-name="org.testng.reporters.TestHTMLReporter"/>
+        <listener class-name="org.testng.reporters.EmailableReporter"/>
+    </listeners>
+    <test name="Vodafone Support">
+        <packages>
+            <package name="com.gmartov"/>
+        </packages>
+    </test>
+</suite>
